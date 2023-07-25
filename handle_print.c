@@ -39,7 +39,7 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 			while (fmt[*ind] != ' ' && fmt[*ind] != '%')
 				--(*ind);
 			if (fmt[*ind] == ' ')
-				--(*ind);			
+				--(*ind);
 			return (1);
 		}
 		unknow_len += write(1, &fmt[*ind], 1);
